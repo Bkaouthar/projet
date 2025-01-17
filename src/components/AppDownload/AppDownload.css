@@ -1,0 +1,185 @@
+/* 🌟 General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+/* 🌟 Form Wrapper - Uses Flex */
+.form {
+    display: flex;
+    width: 90%;
+    max-width: 1000px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* 📌 Contact Info Section */
+.contact-info {
+    flex: 1;
+    background: linear-gradient(135deg, tomato, #ff6b6b);
+    color: white;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-info .title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.contact-info .text {
+    font-size: 16px;
+    line-height: 1.7;
+    opacity: 0.9;
+}
+
+/* 📌 Contact Details */
+.contact-info .information {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    font-size: 16px;
+}
+
+.contact-info .information .icon {
+    width: 35px;
+    margin-right: 12px;
+    filter: invert(1);
+}
+
+/* 📌 Social Media */
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #fff;
+    color: tomato;
+    font-size: 22px;
+    transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(255, 99, 71, 0.4);
+}
+
+.social-icons a:hover {
+    background: #ff6b6b;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* 📌 Contact Form Section */
+.contact-form {
+    flex: 1;
+    background: white;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-form .title {
+    font-size: 28px;
+    font-weight: bold;
+    color: tomato;
+    margin-bottom: 20px;
+}
+
+/* 📌 Input Fields */
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input {
+    width: 100%;
+    padding: 12px 18px;
+    border: 2px solid #ddd;
+    border-radius: 30px;
+    font-size: 16px;
+    background: #fff;
+    transition: box-shadow 0.3s, border 0.3s;
+}
+
+.input:focus {
+    border: 2px solid tomato;
+    box-shadow: 0 4px 10px rgba(255, 99, 71, 0.2);
+    outline: none;
+}
+
+.input-container.textarea .input {
+    min-height: 120px;
+    resize: none;
+}
+
+/* 📌 Submit Button */
+.bt-2 {
+    display: inline-block;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    background: tomato;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 0 4px 12px rgba(255, 99, 71, 0.3);
+}
+
+.bt-2:hover {
+    background: #ff6b6b;
+    transform: translateY(-2px);
+}
+
+.bt-2:active {
+    transform: translateY(0);
+}
+
+/* 📌 Responsive Design */
+@media (max-width: 900px) {
+    .form {
+        flex-direction: column;
+    }
+    
+    .contact-info,
+    .contact-form {
+        padding: 30px;
+    }
+
+    .social-icons a {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+}
